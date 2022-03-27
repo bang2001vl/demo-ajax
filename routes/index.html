@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Demo AJAX</title>
+</header>
+
+<body>
+    <h1>Demo AJAX with XMLHttpRequest</h1>
+    <div id="demo">
+        <form action="./afterClick" method="get">
+            <button id="btnSubmit" type="submit">
+                Change content without reload file
+            </button>
+        </form>
+    </div>
+    
+    <div>
+        <h3>Here is the very very long content</h3>
+    </div>
+
+    <!-- <script>
+        function requestXML() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "ajax/afterClick");
+            xhttp.send();
+        }
+
+        document.getElementById("btnSubmit").addEventListener("click", (ev) => {
+            ev.preventDefault();
+            requestXML();
+        });
+    </script> -->
+
+</body>
+
+</html>
